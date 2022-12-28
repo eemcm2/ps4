@@ -8,7 +8,7 @@ body{background: linear-gradient(to right, #001e55, #000513);color:white;font-si
 <body>
 <script>
 history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
-function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));setTimeout(function(){window.msgs2.innerHTML="Instalando Cache En PS4 ...: " + Percent + "%";},500)}
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));setTimeout(function(){window.msgs2.innerHTML="Instalando Cache En PS4 : " + Percent + "%";},500)}
 function DisplayCacheProgress(){setTimeout(function(){window.msgs2.innerHTML="Cache Instalado Correctamente ✔";},1500);setTimeout(function(){window.msgs2.innerHTML="Presiona El Botón PS Y Abre De Nuevo El Navegador.";},3500);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
 <br>
